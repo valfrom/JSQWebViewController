@@ -20,5 +20,13 @@
 import PackageDescription
 
 let package = Package(
-    name: "JSQWebViewController"
+    name: "JSQWebViewController",
+    products: [
+        .library(name: "JSQWebViewController", targets: ["JSQWebViewController"]),
+    ],
+    targets: [
+        .target(
+            name: "JSQWebViewController",
+        ),
+    ]
 )
